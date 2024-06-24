@@ -1,0 +1,53 @@
+2024-06-24T11:32:53.287Z error: Error: This is a test error
+    at D:\weather-info-service\weather-info-service\routes\weather.js:7:19
+    at Layer.handle [as handle_request] (D:\weather-info-service\weather-info-service\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\weather-info-service\weather-info-service\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\weather-info-service\weather-info-service\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\weather-info-service\weather-info-service\node_modules\express\lib\router\layer.js:95:5)
+    at D:\weather-info-service\weather-info-service\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\weather-info-service\weather-info-service\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\weather-info-service\weather-info-service\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\weather-info-service\weather-info-service\node_modules\express\lib\router\index.js:175:3)
+    at router (D:\weather-info-service\weather-info-service\node_modules\express\lib\router\index.js:47:12)
+2024-06-24T11:33:03.301Z error: AxiosError: Request failed with status code 404
+    at settle (D:\weather-info-service\weather-info-service\node_modules\axios\dist\node\axios.cjs:1983:12)
+    at IncomingMessage.handleStreamEnd (D:\weather-info-service\weather-info-service\node_modules\axios\dist\node\axios.cjs:3085:11)
+    at IncomingMessage.emit (node:events:531:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (D:\weather-info-service\weather-info-service\node_modules\axios\dist\node\axios.cjs:4224:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Object.getWeather (D:\weather-info-service\weather-info-service\services\weatherService.js:8:22)
+    at async getWeather (D:\weather-info-service\weather-info-service\controllers\weatherController.js:6:29)
+2024-06-24T11:33:03.305Z error: AxiosError: Request failed with status code 404
+    at settle (D:\weather-info-service\weather-info-service\node_modules\axios\dist\node\axios.cjs:1983:12)
+    at IncomingMessage.handleStreamEnd (D:\weather-info-service\weather-info-service\node_modules\axios\dist\node\axios.cjs:3085:11)
+    at IncomingMessage.emit (node:events:531:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at Axios.request (D:\weather-info-service\weather-info-service\node_modules\axios\dist\node\axios.cjs:4224:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Object.getWeather (D:\weather-info-service\weather-info-service\services\weatherService.js:8:22)
+    at async getWeather (D:\weather-info-service\weather-info-service\controllers\weatherController.js:6:29)
+2024-06-24T11:33:05.483Z error: Error: This is a test error
+    at D:\weather-info-service\weather-info-service\routes\weather.js:7:19
+    at Layer.handle [as handle_request] (D:\weather-info-service\weather-info-service\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\weather-info-service\weather-info-service\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\weather-info-service\weather-info-service\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\weather-info-service\weather-info-service\node_modules\express\lib\router\layer.js:95:5)
+    at D:\weather-info-service\weather-info-service\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\weather-info-service\weather-info-service\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\weather-info-service\weather-info-service\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\weather-info-service\weather-info-service\node_modules\express\lib\router\index.js:175:3)
+    at router (D:\weather-info-service\weather-info-service\node_modules\express\lib\router\index.js:47:12)
+2024-06-24T11:33:06.558Z error: Error: This is a test error
+    at D:\weather-info-service\weather-info-service\routes\weather.js:7:19
+    at Layer.handle [as handle_request] (D:\weather-info-service\weather-info-service\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\weather-info-service\weather-info-service\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (D:\weather-info-service\weather-info-service\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (D:\weather-info-service\weather-info-service\node_modules\express\lib\router\layer.js:95:5)
+    at D:\weather-info-service\weather-info-service\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\weather-info-service\weather-info-service\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\weather-info-service\weather-info-service\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\weather-info-service\weather-info-service\node_modules\express\lib\router\index.js:175:3)
+    at router (D:\weather-info-service\weather-info-service\node_modules\express\lib\router\index.js:47:12)

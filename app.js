@@ -1,11 +1,14 @@
+// app.js
+
 const express = require('express');
 const helmet = require('helmet');
 const cors = require('cors');
 const xss = require('xss-clean');
 const weatherRoutes = require('./routes/weather');
-const errorHandler = require('./middlewares/errorHandler');
+const globalErrorHandler = require('./middlewares/globalErrorHandler');
 const swaggerMiddleware = require('./middlewares/swaggerMiddleware');
-const path = require('path'); // Import path module
+const path = require('path');
+const logger = require('./config/logger');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -15,20 +18,16 @@ app.use(helmet());
 app.use(cors());
 app.use(xss());
 
-// Serve static files from the 'public' directory
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Define your API routes
 app.use('/api/weather', weatherRoutes);
 
-// Swagger setup (if needed, but not necessary for serving static files)
 swaggerMiddleware(app);
 
-// Error handling middleware
-app.use(errorHandler);
+app.use(globalErrorHandler);
 
 app.listen(PORT, () => {
-    console.log(`Server is running on http://localhost:${PORT}`);
+    logger.info(`Server is running on http://localhost:${PORT}`);
 });
 
 module.exports = app;
