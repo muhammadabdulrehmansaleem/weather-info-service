@@ -1,0 +1,27 @@
+openapi: 3.0.0
+info:
+  title: Weather Information API
+  description: API to fetch weather information for a given city
+  version: 1.0.0
+servers:
+  - url: http://localhost:3000/api
+paths:
+  /weather:
+    get:
+      summary: Get weather information for a city
+      parameters:
+        - in: query
+          name: city
+          required: true
+          schema:
+            type: string
+          description: City name for which weather information is requested
+      responses:
+        '200':
+          description: Successful response
+        '400':
+          description: Invalid request parameters
+        '404':
+          description: City not found
+        '500':
+          description: Internal server error

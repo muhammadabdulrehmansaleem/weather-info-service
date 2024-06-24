@@ -1,8 +1,9 @@
 const express = require('express');
+const router = express.Router();
 const { validateWeatherRequest } = require('../middlewares/validation');
 const { getWeather } = require('../controllers/weatherController');
-const router = express.Router();
 
+// Define route for /api/weather/:city
 router.get('/:city', validateWeatherRequest, getWeather);
 
 module.exports = router;
