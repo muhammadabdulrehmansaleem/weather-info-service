@@ -1,7 +1,6 @@
 const { check, validationResult } = require('express-validator');
 
 const validateWeatherRequest = [
-    // Ensure the city parameter is a non-empty string containing only alphabetic characters, spaces, hyphens, and apostrophes.
     check('city')
         .trim()
         .escape()
