@@ -4,13 +4,13 @@ info:
   description: API to fetch weather information for a given city
   version: 1.0.0
 servers:
-  - url: http://localhost:3000/api
+  - url: http://localhost:3000  # Adjust if your server is running on a different URL
 paths:
-  /weather:
+  /api/weather/{city}:
     get:
       summary: Get weather information for a city
       parameters:
-        - in: query
+        - in: path
           name: city
           required: true
           schema:
