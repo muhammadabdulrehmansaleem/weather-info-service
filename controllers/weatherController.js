@@ -1,13 +1,16 @@
 const weatherService = require('../services/weatherService');
+const logger = require('../config/logger');
 
-const getWeather = async (req, res) => {
+const getWeather = async (req, res, next) => {
     try {
         const weatherData = await weatherService.getWeather(req.params.city);
         res.json(weatherData);
     } catch (error) {
-        res.status(500).json({ error: error.message });
+        logger.error(error.message, error);
+        next(error);
     }
 };
+
 module.exports = {
     getWeather,
 };
